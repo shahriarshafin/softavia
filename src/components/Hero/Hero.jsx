@@ -5,23 +5,23 @@ import './Hero.css';
 const Hero = () => {
 	return (
 		<>
-			<section class='hero'>
+			<section className='hero'>
 				<Container>
 					<Row>
 						<Col xs={12} lg={6}>
-							<div class='hero-wrapper'>
-								<h1 class='hero-heading'>
+							<div className='hero-wrapper'>
+								<h1 className='hero-heading'>
 									Make Your Business
-									<span class='main-gradient'> More Powerfull</span>
+									<span className='main-gradient'> More Powerfull</span>
 								</h1>
-								<h2 class='hero-description'>
+								<h2 className='hero-description'>
 									We have been on this journey for the last 3 years reaching the
 									satisfaction level of our clients through developing equitable
 									software as per requirements.
 								</h2>
 							</div>
-							<button type='button' class='main-btn'>
-								<a class='text-decoration-none text-light' href='#pricing'>
+							<button type='button' className='main-btn'>
+								<a className='text-decoration-none text-light' href='#pricing'>
 									ORDER NOW
 								</a>
 							</button>
@@ -29,7 +29,7 @@ const Hero = () => {
 
 						<Col xs={12} lg={6}>
 							<lottie-player
-								className='animPlayer'
+								classNameName='animPlayer'
 								style={{ width: '100%', height: '100%' }}
 								autoplay
 								background='transparent'
