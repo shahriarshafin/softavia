@@ -39,7 +39,7 @@ const Features = () => {
 											<h6 className='heading'>Built for Developers</h6>
 											<p className='feature-item-description'>
 												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400+ comp.
+												provider, build tooling, documentation, and 400.
 											</p>
 										</div>
 									</div>
@@ -56,7 +56,7 @@ const Features = () => {
 											<h6 className='heading'>Fast Prototyping</h6>
 											<p className='feature-item-description'>
 												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400+ comp.
+												provider, build tooling, documentation, and 400.
 											</p>
 										</div>
 									</div>
@@ -117,7 +117,7 @@ const Features = () => {
 											<h6 className='heading'>Location Integrated</h6>
 											<p className='feature-item-description'>
 												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400+ comp.
+												provider, build tooling, documentation, and 400.
 											</p>
 										</div>
 									</div>

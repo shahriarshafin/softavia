@@ -27,7 +27,7 @@
 	color: #74caff;
 	font-size: 0.75rem;
 	background-color: #203b56;
-	font-weight: 700;
+	font-weight: 600;
 	top: 16px;
 	right: 16px;
 	position: absolute;
@@ -104,7 +104,7 @@
 	padding: 8px 22px;
 	border-radius: 8px;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 0.9375rem;
 	height: 48px;
 	width: 100%;
@@ -128,7 +128,7 @@
 	padding: 8px 22px;
 	border-radius: 8px;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 0.9375rem;
 	height: 48px;
 	width: 100%;
