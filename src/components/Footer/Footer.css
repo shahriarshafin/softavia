@@ -1,0 +1,17 @@
+/* #FOOTER */
+.footer-section {
+	padding-bottom: 0px;
+}
+footer {
+	background-color: #182432;
+	color: #fff;
+	padding: 35px 0px;
+}
+.social-icon {
+	font-size: 1.6rem;
+	margin-right: 1.5rem;
+	color: #fff;
+}
+.linkedin-icon {
+	font-size: 1.7rem !important;
+}
