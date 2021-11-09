@@ -55,6 +55,9 @@ section {
 	-ms-user-select: none;
 }
 
+.text-scilent {
+	color: #a6b0bb;
+}
 /* ......NAV........... */
 .nav-scrolled {
 	border-bottom: 2px solid #cb1c5a;
