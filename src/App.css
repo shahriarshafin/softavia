@@ -54,3 +54,22 @@ section {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
+
+/* ......NAV........... */
+.nav-scrolled {
+	border-bottom: 2px solid #cb1c5a;
+}
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: 0;
+	box-shadow: 0 0 0 0rem;
+	border-color: rgb(4, 177, 252);
+}
+/* #footer */
+.brand-logo {
+	height: 2.25rem;
+	-webkit-user-drag: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
