@@ -1,15 +1,14 @@
 import React from 'react';
 import { Col, Container, Nav, Row } from 'react-bootstrap';
-import { IconContext } from 'react-icons';
 import { FaBasketballBall, FaGithub, FaLinkedin } from 'react-icons/fa';
+import styled from 'styled-components';
 import Logo from '../../assets/images/logo.svg';
-import './Footer.css';
 
 const Footer = () => {
 	const curYear = new Date().getFullYear();
 	return (
 		<>
-			<section className='footer-section'>
+			<FooterSection>
 				<footer>
 					<Container>
 						<Row>
@@ -23,11 +22,9 @@ const Footer = () => {
 									href='https://github.com/shahriarshafin'
 									target='_blank'
 								>
-									<IconContext.Provider value={{ className: 'social-icon' }}>
-										<div>
-											<FaGithub />
-										</div>
-									</IconContext.Provider>
+									<IconWrap>
+										<FaGithub />
+									</IconWrap>
 								</Nav.Link>
 
 								<Nav.Link
@@ -35,13 +32,9 @@ const Footer = () => {
 									href='https://www.linkedin.com/in/shahriarshafin/'
 									target='_blank'
 								>
-									<IconContext.Provider
-										value={{ className: 'social-icon linkedin-icon' }}
-									>
-										<div>
-											<FaLinkedin />
-										</div>
-									</IconContext.Provider>
+									<IconWrap>
+										<FaLinkedin />
+									</IconWrap>
 								</Nav.Link>
 
 								<Nav.Link
@@ -49,11 +42,9 @@ const Footer = () => {
 									href='https://dribbble.com/shahriarshafin'
 									target='_blank'
 								>
-									<IconContext.Provider value={{ className: 'social-icon' }}>
-										<div>
-											<FaBasketballBall />
-										</div>
-									</IconContext.Provider>
+									<IconWrap>
+										<FaBasketballBall />
+									</IconWrap>
 								</Nav.Link>
 							</Col>
 
@@ -79,9 +70,26 @@ const Footer = () => {
 						</Row>
 					</Container>
 				</footer>
-			</section>
+			</FooterSection>
 		</>
 	);
 };
 
 export default Footer;
+
+const FooterSection = styled.section`
+	padding-bottom: 0px;
+	footer {
+		background-color: #182432;
+		color: #fff;
+		padding: 35px 0px;
+	}
+`;
+const IconWrap = styled.div`
+	svg {
+		font-size: 1.6rem;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+		color: #fff;
+	}
+`;
