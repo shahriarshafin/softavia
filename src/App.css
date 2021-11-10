@@ -58,6 +58,23 @@ section {
 .text-scilent {
 	color: #a6b0bb;
 }
+
+.feature-heading {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.875rem;
+	text-align: center;
+}
+.feture-description {
+	color: #9b9ea2;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
 /* ......NAV........... */
 .nav-scrolled {
 	border-bottom: 2px solid #cb1c5a;
