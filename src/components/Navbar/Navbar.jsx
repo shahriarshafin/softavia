@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { AiOutlineBars } from 'react-icons/ai';
 import styled from 'styled-components';
+import { MainButton } from '../../App.style';
 import Logo from '../../assets/images/logo.svg';
 
 const BootNavbar = () => {
@@ -32,7 +33,7 @@ const BootNavbar = () => {
 							</Nav>
 
 							<Nav.Link className='p-0' href='#newsletter'>
-								<Button className='main-btn'>CONTACT US</Button>
+								<MainButton>CONTACT US</MainButton>
 							</Nav.Link>
 						</Navbar.Collapse>
 					</Container>

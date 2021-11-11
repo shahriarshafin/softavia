@@ -9,20 +9,26 @@ import {
 	AiOutlineRocket,
 } from 'react-icons/ai';
 import styled from 'styled-components';
+import {
+	MainGradient,
+	SectionArea,
+	SectionDescription,
+	SectionHeading,
+} from '../../App.style';
 import MobileMoc from '../../assets/images/mobile.png';
 
 const Features = () => {
 	return (
 		<>
-			<section id='services'>
+			<SectionArea id='services'>
 				<Container>
-					<h2 className='feature-heading mt-5'>
-						Why our product is <span className='main-gradient'>the best</span>
-					</h2>
-					<p className='feture-description'>
+					<SectionHeading>
+						Why our product is <MainGradient>the best</MainGradient>
+					</SectionHeading>
+					<SectionDescription>
 						This is the paragraph where you can write more details about your
 						product.
-					</p>
+					</SectionDescription>
 
 					<FeatureItemWrap className='row'>
 						<Col xs={12} lg={4}>
@@ -136,7 +142,7 @@ const Features = () => {
 						</Col>
 					</FeatureItemWrap>
 				</Container>
-			</section>
+			</SectionArea>
 		</>
 	);
 };

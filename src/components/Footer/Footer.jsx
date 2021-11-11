@@ -54,7 +54,7 @@ const Footer = () => {
 								className='mt-4 d-flex align-items-center justify-content-center'
 							>
 								<Nav.Link href='/'>
-									<img className='brand-logo' src={Logo} alt='' />
+									<BrandLogo src={Logo} alt='' />
 								</Nav.Link>
 							</Col>
 
@@ -78,6 +78,7 @@ const Footer = () => {
 export default Footer;
 
 const FooterSection = styled.section`
+	padding-top: 40px;
 	padding-bottom: 0px;
 	footer {
 		background-color: #182432;
@@ -92,4 +93,11 @@ const IconWrap = styled.div`
 		margin-left: 0.5rem;
 		color: #fff;
 	}
+`;
+const BrandLogo = styled.img`
+	height: 2.25rem;
+	-webkit-user-drag: none;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 `;

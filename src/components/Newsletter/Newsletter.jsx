@@ -3,12 +3,13 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { IconContext } from 'react-icons';
 import { FaEnvelope, FaPaperPlane } from 'react-icons/fa';
 import styled from 'styled-components';
+import { MainGradient, SectionArea } from '../../App.style';
 import StripImg from '../../assets/images/newsletter-strip.png';
 
 const Newsletter = () => {
 	return (
 		<>
-			<section id='newsletter'>
+			<SectionArea id='newsletter'>
 				<Container>
 					<NewsletterWrapper>
 						<Row className='d-flex align-items-center justify-content-center'>
@@ -20,7 +21,7 @@ const Newsletter = () => {
 
 									<div className='ms-3'>
 										<h2>
-											Get in<span className='main-gradient'> touch</span>
+											Get in<MainGradient> touch</MainGradient>
 										</h2>
 										<p>Features, releases, showcase… stay in the loop!</p>
 									</div>
@@ -47,16 +48,14 @@ const Newsletter = () => {
 										</div>
 									</Col>
 									<Col sm={12} md={4}>
-										<SubBtn type='submit' className='main-btn'>
-											Subscribe
-										</SubBtn>
+										<SubBtn type='submit'>Subscribe</SubBtn>
 									</Col>
 								</Form>
 							</Col>
 						</Row>
 					</NewsletterWrapper>
 				</Container>
-			</section>
+			</SectionArea>
 		</>
 	);
 };
@@ -139,4 +138,25 @@ const SubBtn = styled.button`
 		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+	background: rgb(2, 133, 246);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 133, 246, 1) 0%,
+		rgba(4, 177, 252, 1) 100%
+	);
+	color: #fff;
+	line-height: 1.5;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	border: transparent;
+	&:hover {
+		background: rgb(4, 177, 252);
+		background: linear-gradient(
+			90deg,
+			rgba(4, 177, 252, 1) 0%,
+			rgba(2, 133, 246, 1) 100%
+		);
+	}
 `;

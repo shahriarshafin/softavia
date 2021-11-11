@@ -2,17 +2,18 @@ import '@lottiefiles/lottie-player';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
+import { MainButton, MainGradient, SectionArea } from '../../App.style';
 const Hero = () => {
 	return (
 		<>
-			<section>
+			<SectionArea>
 				<Container>
 					<Row>
 						<Col xs={12} lg={6}>
 							<HeroWrapper>
 								<HeroHeading>
 									Make Your Business
-									<span className='main-gradient'> More Powerfull</span>
+									<MainGradient> More Powerfull</MainGradient>
 								</HeroHeading>
 								<HeroDescription>
 									We have been on this journey for the last 3 years reaching the
@@ -20,11 +21,11 @@ const Hero = () => {
 									software as per requirements.
 								</HeroDescription>
 							</HeroWrapper>
-							<button type='button' className='main-btn'>
+							<MainButton type='button'>
 								<a className='text-decoration-none text-light' href='#pricing'>
 									ORDER NOW
 								</a>
-							</button>
+							</MainButton>
 						</Col>
 
 						<Col xs={12} lg={6}>
@@ -41,7 +42,7 @@ const Hero = () => {
 						</Col>
 					</Row>
 				</Container>
-			</section>
+			</SectionArea>
 		</>
 	);
 };

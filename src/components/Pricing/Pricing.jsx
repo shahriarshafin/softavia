@@ -2,6 +2,12 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { AiOutlineCheck } from 'react-icons/ai';
 import styled from 'styled-components';
+import {
+	MainGradient,
+	SectionArea,
+	SectionDescription,
+	SectionHeading,
+} from '../../App.style';
 import Volume1 from '../../assets/images/volume1.svg';
 import Volume2 from '../../assets/images/volume2.svg';
 import Volume3 from '../../assets/images/volume3.svg';
@@ -9,15 +15,15 @@ import Volume3 from '../../assets/images/volume3.svg';
 const Pricing = () => {
 	return (
 		<>
-			<section className='pricing' id='pricing'>
+			<SectionArea className='pricing' id='pricing'>
 				<div className='container'>
-					<h2 className='feature-heading mt-5'>
+					<SectionHeading>
 						Choose your
-						<span className='main-gradient'> comfortable plan</span>
-					</h2>
-					<p className='feture-description'>
+						<MainGradient> comfortable plan</MainGradient>
+					</SectionHeading>
+					<SectionDescription>
 						Choose your plan and make modern online conversation magic
-					</p>
+					</SectionDescription>
 
 					<Row>
 						<Col xs={12} md={6} lg={4}>
@@ -116,9 +122,7 @@ const Pricing = () => {
 									</li>
 								</BenefitListParent>
 
-								<PurchaseButton className='main-btn'>
-									Choose Strater
-								</PurchaseButton>
+								<PurchaseButton>Choose Strater</PurchaseButton>
 							</PriceBox>
 						</Col>
 
@@ -169,14 +173,12 @@ const Pricing = () => {
 									</li>
 								</BenefitListParent>
 
-								<PurchaseButton className='main-btn'>
-									Choose Premium
-								</PurchaseButton>
+								<PurchaseButton>Choose Premium</PurchaseButton>
 							</PriceBox>
 						</Col>
 					</Row>
 				</div>
-			</section>
+			</SectionArea>
 		</>
 	);
 };
@@ -294,8 +296,24 @@ const PurchaseButton = styled.div`
 		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+	background: rgb(2, 133, 246);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 133, 246, 1) 0%,
+		rgba(4, 177, 252, 1) 100%
+	);
+	color: #fff;
+	text-align: center;
+	user-select: none;
+	border: transparent;
 	&:hover {
-		background-color: rgb(0, 123, 85);
+		background: rgb(4, 177, 252);
+		background: linear-gradient(
+			90deg,
+			rgba(4, 177, 252, 1) 0%,
+			rgba(2, 133, 246, 1) 100%
+		);
 	}
 `;
 const CurrentPlanButton = styled.div`
