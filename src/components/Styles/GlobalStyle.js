@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 :root {
 	scroll-behavior: smooth;
 }
@@ -18,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 .text-scilent {
 	color: #a6b0bb;
 }
-.nav-scrolled {
+.navScrolled {
 	border-bottom: 2px solid #cb1c5a;
 }
 .navbar-toggler:focus {

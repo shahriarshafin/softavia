@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { AiOutlineBars } from 'react-icons/ai';
 import styled from 'styled-components';
@@ -6,9 +6,20 @@ import { MainButton } from '../../App.style';
 import Logo from '../../assets/images/logo.svg';
 
 const BootNavbar = () => {
+	const [navScrolled, setnavScrolled] = useState(false);
+
+	const changeNavbarColor = () => {
+		if (window.scrollY >= 80) {
+			setnavScrolled(true);
+		} else {
+			setnavScrolled(false);
+		}
+	};
+	window.addEventListener('scroll', changeNavbarColor);
+
 	return (
 		<>
-			<NavWrapper>
+			<NavWrapper className={navScrolled ? 'navScrolled' : ''}>
 				<Navbar expand='lg'>
 					<Container>
 						<Navbar.Brand href='/'>

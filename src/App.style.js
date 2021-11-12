@@ -1,12 +1,5 @@
 import { default as styled } from 'styled-components';
 
-// export const GlobalStyles = createGlobalStyle`
-// body {
-// 	background-color: #0e1620;
-// 	font-family: 'Poppins', sans-serif;
-// }
-// `;
-
 export const SectionArea = styled.section`
 	padding-top: 30px;
 	padding-bottom: 30px;
