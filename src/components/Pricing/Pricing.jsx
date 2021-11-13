@@ -2,28 +2,24 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { AiOutlineCheck } from 'react-icons/ai';
 import styled from 'styled-components';
-import {
-	MainGradient,
-	SectionArea,
-	SectionDescription,
-	SectionHeading,
-} from '../../App.style';
+import { SectionArea } from '../../App.style';
 import Volume1 from '../../assets/images/volume1.svg';
 import Volume2 from '../../assets/images/volume2.svg';
 import Volume3 from '../../assets/images/volume3.svg';
+import SectionTitle from '../SectionTitle';
 
 const Pricing = () => {
 	return (
 		<>
 			<SectionArea className='pricing' id='pricing'>
 				<div className='container'>
-					<SectionHeading>
-						Choose your
-						<MainGradient> comfortable plan</MainGradient>
-					</SectionHeading>
-					<SectionDescription>
-						Choose your plan and make modern online conversation magic
-					</SectionDescription>
+					<SectionTitle
+						Heading={'Choose your'}
+						Highlight={'comfortable plan'}
+						Description={
+							'Choose your plan and make modern online conversation magic'
+						}
+					/>
 
 					<Row>
 						<Col xs={12} md={6} lg={4}>

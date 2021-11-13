@@ -14,6 +14,7 @@ export const MainGradient = styled.span`
 	-webkit-background-clip: text !important;
 	-webkit-text-fill-color: transparent !important;
 	background-clip: text !important;
+	margin-left: 7px;
 `;
 export const MainButton = styled.button`
 	background: rgb(2, 133, 246);

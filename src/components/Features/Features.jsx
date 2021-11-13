@@ -9,27 +9,22 @@ import {
 	AiOutlineRocket,
 } from 'react-icons/ai';
 import styled from 'styled-components';
-import {
-	MainGradient,
-	SectionArea,
-	SectionDescription,
-	SectionHeading,
-} from '../../App.style';
+import { SectionArea } from '../../App.style';
 import MobileMoc from '../../assets/images/mobile.png';
+import SectionTitle from '../SectionTitle';
 
 const Features = () => {
 	return (
 		<>
 			<SectionArea id='services'>
 				<Container>
-					<SectionHeading>
-						Why our product is <MainGradient>the best</MainGradient>
-					</SectionHeading>
-					<SectionDescription>
-						This is the paragraph where you can write more details about your
-						product.
-					</SectionDescription>
-
+					<SectionTitle
+						Heading={'Why our product is'}
+						Highlight={'the best'}
+						Description={
+							'This is the paragraph where you can write more details about your product'
+						}
+					/>
 					<FeatureItemWrap className='row'>
 						<Col xs={12} lg={4}>
 							<Row>
