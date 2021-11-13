@@ -27,7 +27,6 @@
 
 `Softavia` is a demo project for showcasing a software company's website portfolio or products.
 
-
 ## Set up and run
 
 1. Clone the repository
@@ -53,14 +52,19 @@ npm install # or, yarn install
 ```bash
 npm start # or, yarn start
 ```
+
 That's All! Now open [localhost:3000](http://localhost:3000/) to see the app.
 
 ## Built With
+
 - [React-Bootstrap](https://react-bootstrap.github.io/) : A popular frontend framework built-for React
 - [Styled Components](https://styled-components.com/) : Visual primitives for the component age
 - [React-Icons](https://react-icons.github.io/react-icons/) : One shop for all the icons
 - [Lottie-Files](https://lottiefiles.com/) : JSON-based animation file format
 - [Vercel](http://vercel.com/) : Best for Hosting a React app
 
+Looking for static `HTML` , `CSS` , `Bootstrap` version, it is in this -> [`bootstrap-branch`](https://github.com/shahriarshafin/softavia/tree/bootstrap).
+
 ## License
+
 This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
