@@ -1,19 +1,53 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import {
-	AiOutlineAppstore,
-	AiOutlineBarChart,
-	AiOutlineDashboard,
-	AiOutlineNodeExpand,
-	AiOutlineRadarChart,
-	AiOutlineRocket,
-} from 'react-icons/ai';
 import styled from 'styled-components';
 import { SectionArea } from '../../App.style';
 import MobileMoc from '../../assets/images/mobile.png';
+import FeatureItems from '../FeatureItems';
 import SectionTitle from '../SectionTitle';
 
 const Features = () => {
+	const Data = [
+		{
+			icon: 'https://raw.githubusercontent.com/shahriarshafin/softavia/master/src/assets/images/Vector-1.svg',
+			title: 'Built for Developers',
+			description:
+				'Material App is built to make your life easier. Theme provider, build tooling, documentation, and 400.',
+		},
+		{
+			icon: 'https://raw.githubusercontent.com/shahriarshafin/softavia/master/src/assets/images/Vector-2.svg',
+			title: 'Fast Prototyping',
+			description:
+				'Material App is built to make your life easier. Theme provider, build tooling, documentation, and 400.',
+		},
+		{
+			icon: 'https://raw.githubusercontent.com/shahriarshafin/softavia/master/src/assets/images/Vector-3.svg',
+			title: 'Verified Users',
+			description:
+				'Material App is built to make your life easier. Theme provider, build tooling, documentation, and 400.',
+		},
+	];
+	const Data2 = [
+		{
+			icon: 'https://raw.githubusercontent.com/shahriarshafin/softavia/master/src/assets/images/Vector-4.svg',
+			title: 'Collaborate',
+			description:
+				'Material App is built to make your life easier. Theme provider, build tooling, documentation, and 400.',
+		},
+		{
+			icon: 'https://raw.githubusercontent.com/shahriarshafin/softavia/master/src/assets/images/Vector-5.svg',
+			title: 'Location Integrated',
+			description:
+				'Material App is built to make your life easier. Theme provider, build tooling, documentation, and 400.',
+		},
+		{
+			icon: 'https://raw.githubusercontent.com/shahriarshafin/softavia/master/src/assets/images/Vector-6.svg',
+			title: 'Easy to Use',
+			description:
+				'Material App is built to make your life easier. Theme provider, build tooling, documentation, and 400.',
+		},
+	];
+
 	return (
 		<>
 			<SectionArea id='services'>
@@ -28,53 +62,15 @@ const Features = () => {
 					<FeatureItemWrap className='row'>
 						<Col xs={12} lg={4}>
 							<Row>
-								<Col xs={12}>
-									<FeatureItem>
-										<Icons>
-											<AiOutlineNodeExpand />
-										</Icons>
-
-										<div className='ms-4'>
-											<h6>Built for Developers</h6>
-											<p>
-												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400.
-											</p>
-										</div>
-									</FeatureItem>
-								</Col>
-
-								<Col xs={12}>
-									<FeatureItem>
-										<Icons>
-											<AiOutlineAppstore />
-										</Icons>
-
-										<div className='ms-4'>
-											<h6>Fast Prototyping</h6>
-											<p>
-												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400.
-											</p>
-										</div>
-									</FeatureItem>
-								</Col>
-
-								<Col xs={12}>
-									<FeatureItem>
-										<Icons>
-											<AiOutlineRocket />
-										</Icons>
-
-										<div className='ms-4'>
-											<h6>Verified Users</h6>
-											<p>
-												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400.
-											</p>
-										</div>
-									</FeatureItem>
-								</Col>
+								{Data.map((i) => {
+									return (
+										<FeatureItems
+											ItemIcon={i.icon}
+											Heading={i.title}
+											Description={i.description}
+										/>
+									);
+								})}
 							</Row>
 						</Col>
 
@@ -86,53 +82,15 @@ const Features = () => {
 
 						<Col xs={12} lg={4}>
 							<Row>
-								<Col xs={12}>
-									<FeatureItem>
-										<Icons>
-											<AiOutlineBarChart />
-										</Icons>
-
-										<div className='ms-4'>
-											<h6>Collaborate</h6>
-											<p>
-												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400.
-											</p>
-										</div>
-									</FeatureItem>
-								</Col>
-
-								<Col xs={12}>
-									<FeatureItem>
-										<Icons>
-											<AiOutlineDashboard />
-										</Icons>
-
-										<div className='ms-4'>
-											<h6>Location Integrated</h6>
-											<p>
-												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400.
-											</p>
-										</div>
-									</FeatureItem>
-								</Col>
-
-								<Col xs={12}>
-									<FeatureItem>
-										<Icons>
-											<AiOutlineRadarChart />
-										</Icons>
-
-										<div className='ms-4'>
-											<h6>Easy to Use</h6>
-											<p>
-												Material App is built to make your life easier. Theme
-												provider, build tooling, documentation, and 400.
-											</p>
-										</div>
-									</FeatureItem>
-								</Col>
+								{Data2.map((i) => {
+									return (
+										<FeatureItems
+											ItemIcon={i.icon}
+											Heading={i.title}
+											Description={i.description}
+										/>
+									);
+								})}
 							</Row>
 						</Col>
 					</FeatureItemWrap>
@@ -157,28 +115,4 @@ const FeatureItemWrap = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-`;
-const FeatureItem = styled.div`
-	display: flex;
-	text-align: left;
-	padding: 18px 20px;
-
-	h6 {
-		color: #fff;
-		font-size: 1.125rem;
-		font-weight: 500;
-		line-height: 1.25;
-	}
-	p {
-		color: #9b9ea2;
-		font-size: 0.9rem;
-		font-weight: 400;
-		line-height: 1.75;
-	}
-`;
-const Icons = styled.div`
-	svg {
-		font-size: 35px;
-		color: #54afe6;
-	}
 `;
