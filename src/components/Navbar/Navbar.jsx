@@ -22,7 +22,7 @@ const BootNavbar = () => {
 			<NavWrapper className={navScrolled ? 'navScrolled' : ''}>
 				<Navbar expand='lg'>
 					<Container>
-						<Navbar.Brand href='/'>
+						<Navbar.Brand href='#hero'>
 							<BrandLogo src={Logo} alt='' />
 						</Navbar.Brand>
 
@@ -32,7 +32,7 @@ const BootNavbar = () => {
 
 						<Navbar.Collapse id='basic-navbar-nav'>
 							<Nav className='navbar-nav mx-auto mb-2 mb-lg-0'>
-								<NavLink href='/' className='nav-link'>
+								<NavLink href='#hero' className='nav-link'>
 									Home
 								</NavLink>
 								<NavLink href='#services' className='nav-link'>

@@ -6,7 +6,7 @@ import { MainButton, MainGradient, SectionArea } from '../../App.style';
 const Hero = () => {
 	return (
 		<>
-			<SectionArea>
+			<SectionArea id='hero'>
 				<Container>
 					<Row>
 						<Col xs={12} lg={6}>
